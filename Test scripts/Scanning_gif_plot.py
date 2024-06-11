@@ -4,8 +4,8 @@ import imageio
 import matplotlib.pyplot as plt
 
 # 1) Define the file path
-file_path_source = "./data/scanning_for_gif"
-file_path_result = "./vystupy/scan_gif_test"
+file_path_source = "./Test scripts/data/scanning_for_gif"
+file_path_result = "./Test scripts/vystupy/scan_gif_test"
 
 # 2) Read the pixel values from the .TXTs file and save .PNGs
 for step in range(27):
@@ -31,7 +31,6 @@ print(".PNGs generated successfully!")
 # 3) GIF generation from the individual .PNGs
 # Get the list of PNG files by comprehension
 png_files = [f'{file_path_result}/raw_{step}.png' for step in range(27)]
-print(png_files)
 # Create the GIF file path
 gif_file_path = f'{file_path_result}/scan_gif.gif'
 # Set the frame rate (in seconds per frame)

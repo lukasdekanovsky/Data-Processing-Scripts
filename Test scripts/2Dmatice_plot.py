@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Read the pixel values from the .txt file
-pixel_values = np.loadtxt('./data/2D_matice.txt')
+pixel_values = np.loadtxt('./Test scripts/data/2D_matice.txt')
 
 # Create a figure and axis
 fig, ax = plt.subplots()
